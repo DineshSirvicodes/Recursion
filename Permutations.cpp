@@ -12,7 +12,7 @@ public:
             return;
         }
         for(int i = 0; i<nums.size(); i++){
-            if(!freq[i]){ 
+            if(!freq[i]){ // freq[i] == 0
                 ds.push_back(nums[i]);
                 freq[i] = 1;
                 recurPermutate(ds,nums,freq,ans);
@@ -113,4 +113,27 @@ All permutations:
 3 1 2 
 3 2 1 
 
-// Second Sol - More Optimal, without extra space ie without using map / hasharray
+// Second Sol - With Backtracking. More Optimal, without extra space ie without using map / hasharray 
+// logic swap each index, TC - O(N!) * O(N),where O(N) for loop. SC - O(1). Also Auxiliary space is O(N) for recursion depth
+// Go from index to n - 1 and swap once the swap has been done call recursion for the next state. 
+// After coming back from the recursion make sure you re-swap it because, for the next element, the swap will not take place.
+
+class Solution {
+public:
+    void recurPermute(int index,vector<int> &nums, vector<vector<int>> &ans){
+        if(index == nums.size()){
+            ans.push_back(nums);
+            return;
+        }
+        for(int i = index; i<nums.size(); i++){
+            swap(nums[index],nums[i]);
+            recurPermute(index+1,nums,ans);
+            swap(nums[index],nums[i]);
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<vector<int>> ans;
+        recurPermute(0,nums,ans);
+        return ans;
+    }
+};
