@@ -1,4 +1,4 @@
-// TC - O(2^n * k^(n/2)) where 2^n is to generate every substring, O(k) for inserting the palindromes into another data structure. k is the avg lenth of the palindrome list. O(n/2) for checking if a substring generated is a palindrome or not
+// TC - O(2^n * k^(n/2)) where 2^n is to generate every substring and O(k) for inserting the palindromes into another data structure. k is the avg lenth of the palindrome list. O(n/2) for checking if a substring generated is a palindrome or not
 // Sc - O(k*x) , k is the average length of the palindrome list, and x is the number of palindromes generated. O(n) is the recursion depth.
 class Solution {
 public:
