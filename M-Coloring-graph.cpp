@@ -51,6 +51,7 @@ public:
         
     }
 };
+// functionality of each method=>
 // bool isSafe()=>
 //It iterates through all nodes to check if there is any adjacent node (graph[k][node] == 1) that is already colored with the same color (color[k] == col).
 //If such a node is found, it returns false, indicating it's not safe to color the current node with col.
