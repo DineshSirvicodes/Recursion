@@ -1,4 +1,4 @@
-//TC - 2^n + 2^n* log(2^n)
+//TC - 2^n + 2^n*log(2^n)
 // Intuition: The main idea is that on every index you have two options either to select the element to add it to your subset(pick) 
 // or not select the element at that index and move to the next index(non-pick).
 
