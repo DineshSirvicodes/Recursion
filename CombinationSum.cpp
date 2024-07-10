@@ -1,4 +1,4 @@
-//TC = O(2^t * k) where t is the target, k is the average length of the ds
+//TC = O(2^t * k) where t is the target, k is the average length of the data structure
 // SC = O(k*x), k is the average length and x is the no. of combinations
 class Solution {
 public:
