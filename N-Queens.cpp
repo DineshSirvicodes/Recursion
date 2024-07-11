@@ -4,7 +4,7 @@ public:
     bool isSafe(int row,int col,vector<string> board,int n){
         int duprow = row;
         int dupcol = col;
-        //  looking in North-West direction, row decrease,col decrease
+        //  looking in North-West direction, row decrease,col decreases
         while(row>=0 && col>=0){
             if(board[row][col] == 'Q') {
                 return false;
