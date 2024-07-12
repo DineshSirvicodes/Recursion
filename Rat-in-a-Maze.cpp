@@ -19,7 +19,7 @@ class Solution{
             solve(i,j-1,a,n,ans,move+'L',vis);
             vis[i][j] = 0;
         }
-        //right , row fixed , col increase
+        //right , row fixed , col increases
         if(j+1<n && !vis[i][j+1] && a[i][j+1] == 1){
             vis[i][j] = 1;
             solve(i,j+1,a,n,ans,move+'R',vis);
