@@ -46,7 +46,7 @@ class Solution{
 // U-> i-1, j ie -1, +0
 // keeping two arrays di = [+1,0,0,-1]
 //                    dj = [0,-1,1,0]
-// so di[0] and dj[0] will indicate down direction and so on for the rest
+// so di[0] and dj[0] will indicate down direction and so on for the rest of the directions left, right , up
 class Solution{
     public:
     void solve(int i,int j, vector<vector<int>>&a,int n, vector<string>& ans,string move,
