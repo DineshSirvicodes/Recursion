@@ -1,5 +1,5 @@
 //TC - 4^(n*m)
-// SC - O(n*m) , ie recursion depth
+// SC - O(n*m) , ie recursion depth of the recursion
 class Solution{
     public:
     void solve(int i ,int j ,vector<vector<int>>&a , int n, vector<string> &ans,string move,vector<vector<int>>&vis){
