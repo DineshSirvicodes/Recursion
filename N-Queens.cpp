@@ -1,4 +1,4 @@
-//First Sol - TC - (N! * N) , Sc =  O(N^2)
+//First Sol - TC - (N! * N) , Sc = O(N^2)
 class Solution {
 public:
     bool isSafe(int row,int col,vector<string> board,int n){
