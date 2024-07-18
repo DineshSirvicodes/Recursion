@@ -2,7 +2,7 @@
 // Intuition: The main idea is that on every index you have two options either to select the element to add it to your subset(pick) 
 // or not select the element at that index and move to the next index(non-pick).
 
-// Approach: Traverse through the array and for each index solve for two arrays, one where you pick the element,i.e add the 
+// Approach: Traverse through the entire array and for each index solve for two arrays, one where you pick the element,i.e add the 
 // element to the sum or don’t pick and move to the next element, recursively, until the base condition. Here when you reach the end of the array is the base condition.
 class Solution {
   public:
