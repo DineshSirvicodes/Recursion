@@ -21,7 +21,7 @@ public:
             }
             col--;
         }
-        //south-west,row increases, col decrease
+        //south-west,row increases, col decreases
         row = duprow;
         col = dupcol;
         while(row<n && col>=0){
