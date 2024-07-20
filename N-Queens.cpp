@@ -12,7 +12,7 @@ public:
             row--;
             col--;
         }
-        // west direction,only col decrease
+        // west direction,only col decreases
         row = duprow;
         col = dupcol;
         while(col>=0){
